@@ -175,24 +175,28 @@ function checkWinner(x, y)
 			if(board[x][0] == board[x][1] && board[x][0] == board[x][2]){
 				
 					alert("Winner"); 
+					location.reload();
 			}
 			//Vertical
 			
 			if(board[0][y] == board[1][y] && board[0][y] == board[2][y]){
 				
 					alert("Winner"); 
+					location.reload();
 			} 
 
 			if(board[0][0] == board[1][1] && board[0][0] == board[2][2] && board[1][1] == board[2][2] && t1 == t2)
 			{
 				t1 = t2 + 1;
 				alert("Winner");
+				  location.reload();
 			}
 
 			if(board[0][2] == board[1][1] && board[0][2] == board[2][0] && s1 == s2)
 			{
 				t1 = t2 + 1;
 				alert("Winner");
+				location.reload();
 			}
 			//diagonal
 			
