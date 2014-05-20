@@ -1,0 +1,129 @@
+body{
+  /*background-image: url("pool_table.png");*/
+  background-color: #730000;
+}
+#one{
+  text-align: center;
+}
+#oneOne{
+  float: left;
+  border-right:5px solid black;
+  border-bottom:5px solid black;
+ /* background-image: url("x.png");*/
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+#oneTwo{
+  float: left;
+  border-right:5px solid black;
+  border-bottom:5px solid black;
+   /*background-image: url("x.png");*/
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+#oneThree{
+  float: left;
+  background-size: cover;
+  border-bottom:5px solid black;
+ 
+  height: 100px;
+  width: 100px;
+}
+
+#twoOne{
+  clear: both;
+  border-right:5px solid black;
+  border-bottom:5px solid black;
+  float: left;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+#twoTwo{
+  float: left;
+  border-right:5px solid black;
+  border-bottom:5px solid black;
+ /*background-image: url("o.png");*/
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+#twoThree{
+  
+  border-bottom:5px solid black;
+  float: left;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+#threeOne{
+  border-right:5px solid black;
+  background-size: cover;
+  clear: both;
+  float: left;
+ 
+  height: 100px;
+  width: 100px;
+}
+
+#threeTwo{
+  float: left;
+  border-right:5px solid black;
+ 
+ background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+#threeThree{
+  float: left;
+ 
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+#turn{
+  margin-top: 10px;
+  clear: both;
+  float: left;
+  height: 50px;
+  width: 300px;
+  /*background-color: white;*/
+  border:2px black;
+  border-radius:25px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-style: outset;
+
+}
+#f{
+  float: right;
+  height: 70px;
+width: 70px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+  background-color: green;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#status{
+  margin-top: 10px;
+  clear: both;
+  float: left;
+  height: 50px;
+  width: 300px;
+  /*background-color: gray;*/
+  border:2px solid black;
+  border-radius:25px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-style: outset;
+}
