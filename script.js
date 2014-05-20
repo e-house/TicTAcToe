@@ -5,10 +5,12 @@ $(document).ready(function () {
 
 var board = new Array(3);
 
-var t1;
-			var t2;
+			var t1, t2, s1, s2;
+			//var t2;
 			t1 = 3;
 			t2 = t1;
+			s1 = t1;
+			s2 = s1;
 var temp = 0;
  for(i=0; i<3; i++)
  		board[i] = new Array(3);
@@ -182,6 +184,12 @@ function checkWinner(x, y)
 			} 
 
 			if(board[0][0] == board[1][1] && board[0][0] == board[2][2] && board[1][1] == board[2][2] && t1 == t2)
+			{
+				t1 = t2 + 1;
+				alert("Winner");
+			}
+
+			if(board[0][2] == board[1][1] && board[0][2] == board[2][0] && s1 == s2)
 			{
 				t1 = t2 + 1;
 				alert("Winner");
