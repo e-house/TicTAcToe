@@ -21,13 +21,26 @@ for(w=0; w<3; w++){
 //alert("exit");
 }
 
+var $xOrO = "o.png";
+$(".board").click(function(){
+
+	if($xOrO == "x.png")
+		$xOrO = "o.png";
+	else
+		$xOrO = "x.png";
+
+
+
+});
 $( "#oneOne" ).click(function() {
   
   var x = $(this).css("background-image");
   if(x=="none")
   {
+  	
 
- 	$(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[0][0] = $(this).css("background-image");
  	checkWinner(0,0);
  	//alert(board[0][0]);
@@ -42,7 +55,10 @@ $( "#oneTwo" ).click(function() {
   if(x=="none")
   {
 
-  	$(this).css("background-image",  "url('x.png')");
+  	
+  	
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+  	//$(this).css("background-image",  "url('x.png')");
   	board[0][1] = $(this).css("background-image");
   	checkWinner(0,1);
 
@@ -56,8 +72,8 @@ $( "#oneThree" ).click(function() {
  var x = $(this).css("background-image");
   if(x=="none")
   {
-
- 	$(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[0][2] = $(this).css("background-image");
  	checkWinner(0,2);
 
@@ -73,8 +89,8 @@ $( "#twoOne" ).click(function() {
   if(x=="none")
   {
 
-  
- 	$(this).css("background-image",  "url('x.png')");
+  $(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[1][0] = $(this).css("background-image");
  	//alert(board[1][0]);
  	checkWinner(1,0);
@@ -89,8 +105,8 @@ $( "#twoTwo" ).click(function() {
   if(x=="none")
   {
 
-  
- 	$(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[1][1] = $(this).css("background-image");
  	//alert(board[1][1]);
  	checkWinner(1,1);
@@ -105,8 +121,8 @@ $( "#twoThree" ).click(function() {
   if(x=="none")
   {
 
-  
- 	$(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[1][2] = $(this).css("background-image");
  	//alert(board[1][2]);
  	checkWinner(1,2);
@@ -120,8 +136,8 @@ $( "#threeOne" ).click(function() {
   if(x=="none")
   {
 
-  
- 	$(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[2][0] = $(this).css("background-image");
  	checkWinner(2,0);
  }else
@@ -135,8 +151,8 @@ $( "#threeTwo" ).click(function() {
   if(x=="none")
   {
 
-  
- 	$(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+ 	//$(this).css("background-image",  "url('x.png')");
  	board[2][1] = $(this).css("background-image");
  	checkWinner(2,1);
 
@@ -151,8 +167,8 @@ $( "#threeThree" ).click(function() {
   if(x=="none")
   {
 
-  
-	 $(this).css("background-image",  "url('x.png')");
+  	$(this).css("background-image", "url('" + $xOrO + "')");
+	 //$(this).css("background-image",  "url('x.png')");
  	 board[2][2] = $(this).css("background-image");
  	 checkWinner(2,2);
  }else
